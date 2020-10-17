@@ -18,7 +18,6 @@ class MovieListAdapter(private val items: List<MovieItem>) : RecyclerView.Adapte
     }
 
     override fun getItemCount(): Int {
-        print("amod-----------------123")
         return  items.size
     }
 
@@ -32,7 +31,7 @@ class MovieListAdapter(private val items: List<MovieItem>) : RecyclerView.Adapte
 
 
         /**
-         * We will use this function to bind instance of Movie to the row
+         * Wes will use this function to bind instance of Movie to the row
          */
         fun bind(model: MovieItem?) {
             binding?.model = model
