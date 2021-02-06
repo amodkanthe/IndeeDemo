@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="model"
+            type="com.example.walkonearth.model.IntroVideo" />
+
+        <variable
+            name="callback"
+            type="com.example.walkonearth.model.PlayerStateCallback" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:layout_margin="12dp"
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:on_state_change="@{callback}"
+                app:resize_mode="zoom"
+                app:show_buffering="when_playing"
+                app:shutter_background_color="@android:color/transparent"
+                app:surface_type="texture_view"
+                app:video_url="@{model.introVideo}" />
+
+            <TextView
+                android:text="@{`Meet ` + model.firstName}"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="13dp"
+                android:textColor="@color/cyan_blue"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

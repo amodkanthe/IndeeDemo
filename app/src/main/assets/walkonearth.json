@@ -1,0 +1,40 @@
+{	"teacherId": "1",
+  "firstName": "Surekha",
+  "lastName": "Norris",
+  "level": "Senior Practitioner in Hatha, Vinyasa Flow, Iyengar",
+  "photo": "https://wone-test.s3.eu-west-2.amazonaws.com/avatar-3.jpg",
+  "introVideo": "https://wone-test.s3.eu-west-2.amazonaws.com/file_example_MP4_480_1_5MG.mp4",
+  "bio": "Surekha has studied numerous styles of meditation, yoga, chanting and other spiritual practices and is trained Ashtanga, Satyananda, and Forrest yoga. He has a great love for the traditional as he has taken studies in Sanskrit, and is a qualified Vedic chanting teacher. Craig teaches so that people can experience the healing effects of yoga, create change in themselves and live with empowerment and confidence.",
+  "teachingAccreditations": "200hr Kevala Yoga Teaching Diploma\n500hr Satyananda Yoga\n200hr Hot Power Yoga\n500hr Forrest Yoga",
+  "classes": [{
+    "id": "1",
+    "name": "Restorative",
+    "photo": "https://wone-test.s3.eu-west-2.amazonaws.com/Restorative.png"
+  },
+    {
+      "id": "2",
+      "name": "Chanting",
+      "photo": "https://wone-test.s3.eu-west-2.amazonaws.com/Chanting.png"
+    },
+    {
+      "id": "3",
+      "name": "Pranayama",
+      "photo": "https://wone-test.s3.eu-west-2.amazonaws.com/Screenshot%202020-12-22%20at%2023.04.37.png"
+    },
+    {
+      "id": "4",
+      "name": "Vedic Meditation",
+      "photo": "https://wone-test.s3.eu-west-2.amazonaws.com/Vedic%20meditation.png"
+    },
+    {
+      "id": "5",
+      "name": "Mindfulness",
+      "photo": "https://wone-test.s3.eu-west-2.amazonaws.com/Mindfulness.png"
+    },
+    {
+      "id": "6",
+      "name": "Vinyasa Flow",
+      "photo": "https://wone-test.s3.eu-west-2.amazonaws.com/Vinyasa%20Flow.png"
+    }
+  ]
+}
